@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.headerItem {
+  width: 100%;
+  color: black
+}
+
+
+a:link {
+  color: red;
+  text-decoration: none;
+  padding: 100;
+
+}
+
+/* mouse over link */
+.headerItem:hover {
+  color: gray;
+  background-color: black;
+}
+
+.scheduleMarker {
+  background-color: black;
+  width: 33%
+}
+
+.predictorMarker {
+  background-color: black;
+  width: 33%;
+  margin: auto;
+}
+
+.rankingsMarker {
+  background-color: black;
+  width: 33%;
+  margin-left: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.score{
+  padding: 20px;
+  text-align: center;
+}
+
+.teamLogo{
+  width: 80%;
+  display: inline-block;
+}
+
+.date {
+
+}
+
+.scores{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.bottomButtons {
+text-align: center;
+}
+
+.bottomButton {
+  background-color: #C4C4C4;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+}
