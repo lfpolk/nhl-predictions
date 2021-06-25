@@ -1,6 +1,6 @@
 {
   "name": "nhl-predictions",
-  "homepage": "https://lfpolk.github.io/nhl-predictor",
+  "homepage": "https://lfpolk.github.io/nhl-predictions",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
