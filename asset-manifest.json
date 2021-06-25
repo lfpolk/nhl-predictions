@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nhl-predictor/static/css/main.c1f0ef34.chunk.css",
+    "main.js": "/nhl-predictor/static/js/main.5b965c51.chunk.js",
+    "main.js.map": "/nhl-predictor/static/js/main.5b965c51.chunk.js.map",
+    "runtime-main.js": "/nhl-predictor/static/js/runtime-main.b2a9ed92.js",
+    "runtime-main.js.map": "/nhl-predictor/static/js/runtime-main.b2a9ed92.js.map",
+    "static/js/2.7b3d87dc.chunk.js": "/nhl-predictor/static/js/2.7b3d87dc.chunk.js",
+    "static/js/2.7b3d87dc.chunk.js.map": "/nhl-predictor/static/js/2.7b3d87dc.chunk.js.map",
+    "index.html": "/nhl-predictor/index.html",
+    "static/css/main.c1f0ef34.chunk.css.map": "/nhl-predictor/static/css/main.c1f0ef34.chunk.css.map",
+    "static/js/2.7b3d87dc.chunk.js.LICENSE.txt": "/nhl-predictor/static/js/2.7b3d87dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2a9ed92.js",
+    "static/js/2.7b3d87dc.chunk.js",
+    "static/css/main.c1f0ef34.chunk.css",
+    "static/js/main.5b965c51.chunk.js"
+  ]
+}
