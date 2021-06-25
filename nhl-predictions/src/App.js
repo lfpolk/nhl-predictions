@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Link, Route} from "react-router-dom";
 
 // Components
 
@@ -44,25 +44,21 @@ if (teams == "empty"){
   return (
     <Fragment>
       {teams != "empty" && <div>
-      <Router>
+      <Router  hashType='noslash'>
       <Header />
 
         <div className="container">
-          <Switch>
+          
             <TeamsContext.Provider value={teams}>
-              <Route exact path="/" >
-                <Predictor />
-              </Route>
+              <Route exact path="/" component={Predictor} />
 
-              <Route exact path="/schedule" >
-                <Schedule />
-              </Route>
+              <Route exact path="/schedule" component={Schedule} />
 
-              <Route exact path="/rankings" >
-                <Rankings />
-              </Route>
+
+              <Route exact path="/rankings" component={Rankings} />
+
             </TeamsContext.Provider>
-          </Switch>
+         
         </div>
       </Router>
       </div>}
