@@ -50,34 +50,124 @@ a:link {
   text-align: center;
 }
 
-.score{
-  padding: 20px;
-  text-align: center;
-}
-
 .teamLogo{
-  width: 80%;
-  display: inline-block;
+  width: 100%;
 }
 
 .date {
-
+  text-align: center;
 }
 
 .scores{
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: scroll;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+.score{
+  display: flex;
+  padding-bottom:3em;
+}
+
+.logoDiv {
+  flex: 1;
+  margin: auto
+}
+
+.scoreDetails {
+  flex: 1;
+  flex-grow: 3;
+  text-align: center;
+}
+
+.scoreDetailsRow {
+  display: flex;
+  justify-content: space-around;
 }
 
 .bottomButtons {
-text-align: center;
+  text-align: center;
 }
 
 .bottomButton {
-  background-color: #C4C4C4;
+
   text-align: center;
   padding: 10px;
   justify-content: center;
+}
+
+.predictor {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.predictorStats {
+  width: 30%;
+}
+
+.selector {
+  width: 30%;
+}
+
+.selections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selection {
+  width: 20%;
+  padding: .1em;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+.away {
+  color: #666
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 5px solid rgb(61, 0, 202);
+  background-color: lightblue;
+}
+
+.selectorLabel {
+}
+
+.predictorChart {
+  width: 100%;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}
+
+th, td {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tableImg {
+  width: 50%
+}
+
+.rankingsTable {
+
 }
