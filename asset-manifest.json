@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nhl-predictions/static/css/main.c1f0ef34.chunk.css",
-    "main.js": "/nhl-predictions/static/js/main.5b965c51.chunk.js",
-    "main.js.map": "/nhl-predictions/static/js/main.5b965c51.chunk.js.map",
+    "main.css": "/nhl-predictions/static/css/main.3eb3fd0a.chunk.css",
+    "main.js": "/nhl-predictions/static/js/main.bbd640cf.chunk.js",
+    "main.js.map": "/nhl-predictions/static/js/main.bbd640cf.chunk.js.map",
     "runtime-main.js": "/nhl-predictions/static/js/runtime-main.a625c603.js",
     "runtime-main.js.map": "/nhl-predictions/static/js/runtime-main.a625c603.js.map",
-    "static/js/2.7b3d87dc.chunk.js": "/nhl-predictions/static/js/2.7b3d87dc.chunk.js",
-    "static/js/2.7b3d87dc.chunk.js.map": "/nhl-predictions/static/js/2.7b3d87dc.chunk.js.map",
+    "static/js/2.b34446a2.chunk.js": "/nhl-predictions/static/js/2.b34446a2.chunk.js",
+    "static/js/2.b34446a2.chunk.js.map": "/nhl-predictions/static/js/2.b34446a2.chunk.js.map",
     "index.html": "/nhl-predictions/index.html",
-    "static/css/main.c1f0ef34.chunk.css.map": "/nhl-predictions/static/css/main.c1f0ef34.chunk.css.map",
-    "static/js/2.7b3d87dc.chunk.js.LICENSE.txt": "/nhl-predictions/static/js/2.7b3d87dc.chunk.js.LICENSE.txt"
+    "static/css/main.3eb3fd0a.chunk.css.map": "/nhl-predictions/static/css/main.3eb3fd0a.chunk.css.map",
+    "static/js/2.b34446a2.chunk.js.LICENSE.txt": "/nhl-predictions/static/js/2.b34446a2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a625c603.js",
-    "static/js/2.7b3d87dc.chunk.js",
-    "static/css/main.c1f0ef34.chunk.css",
-    "static/js/main.5b965c51.chunk.js"
+    "static/js/2.b34446a2.chunk.js",
+    "static/css/main.3eb3fd0a.chunk.css",
+    "static/js/main.bbd640cf.chunk.js"
   ]
 }
