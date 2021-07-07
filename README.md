@@ -1,1 +1,1 @@
-# nhl-predictions
+# https://lfpolk.github.io/nhl-predictions/
