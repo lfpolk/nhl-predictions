@@ -41,7 +41,7 @@ season = '20202021'
 # Get 5v5 stats for whole season
 driver.get(f'https://www.naturalstattrick.com/teamtable.php?fromseason={season}&thruseason={season}&stype=2&sit=sva&score=all&rate=y&team=all&loc=B&gpf=410&fd=&td=')
 teams = {}
-for i in range(1,32):
+for i in range(1,33):
     team = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(2)').text
     xG = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(23)').text
     xGA = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(24)').text
@@ -50,7 +50,7 @@ for i in range(1,32):
 
 # Get Power Play stats for full season
 driver.get(f'https://www.naturalstattrick.com/teamtable.php?fromseason={season}&thruseason={season}&stype=2&sit=pp&score=all&rate=n&team=all&loc=B&gpf=410&fd=&td=')
-for i in range(1,32):
+for i in range(1,33):
     team = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(2)').text
     powerPlayGoals = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(20)').text
     games = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(3)').text
@@ -59,7 +59,7 @@ for i in range(1,32):
 
 # Get Penalty kill stats for full season
 driver.get(f'https://www.naturalstattrick.com/teamtable.php?fromseason={season}&thruseason={season}&stype=2&sit=pk&score=all&rate=n&team=all&loc=B&gpf=410&fd=&td=')
-for i in range(1,32):
+for i in range(1,33):
     team = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(2)').text
     expectedPKGA = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(24)').text
     games = driver.find_element_by_css_selector(f'#teams > tbody > tr:nth-child({i}) > td:nth-child(3)').text
@@ -114,7 +114,7 @@ if(isPlayoffs):
 
 seasonType = 2
 colsRemoved = 0
-numTeams = 32
+numTeams = 33
 
 # Get 5v5 stats for last 10 of regular season
 driver.get(f'https://www.naturalstattrick.com/teamtable.php?fromseason={season}&thruseason={season}&stype={seasonType}&sit=sva&score=all&rate=y&team=all&loc=B&gpf=10&fd=&td=')
@@ -178,4 +178,4 @@ def lambda_handler(event, context):
 
         # Put into dynamo
         dynamodb.put_item(TableName='current_stats', Item={'team':{'S':team},'evenStrengthxGF':{'N':str(weightedxGF)}, 'evenStrengthxGA':{'N':str(weightedxGA)}, 'evenStrengthSVP':{'N':str(weightedSVP)}, 'powerPlayGF':{'N':str(weightedppGF)}, 'penaltyKillxGA':{'N':str(weightedxPKGA)}, 'penaltyKillSVP':{'N':str(weightedPKSVP)}})
-    dynamodb.put_item(TableName='current_stats', Item={'team':{'S':'League Average'},'evenStrengthxGF':{'N':str(totalxGF/31)}, 'evenStrengthxGA':{'N':str(totalxGA/31)}, 'evenStrengthSVP':{'N':str(totalSVP/31)}, 'powerPlayGF':{'N':str(totalppGF/31)}, 'penaltyKillxGA':{'N':str(totalxPKGA/31)}, 'penaltyKillSVP':{'N':str(totalPKSVP/31)}})
+    dynamodb.put_item(TableName='current_stats', Item={'team':{'S':'League Average'},'evenStrengthxGF':{'N':str(totalxGF/32)}, 'evenStrengthxGA':{'N':str(totalxGA/32)}, 'evenStrengthSVP':{'N':str(totalSVP/32)}, 'powerPlayGF':{'N':str(totalppGF/32)}, 'penaltyKillxGA':{'N':str(totalxPKGA/32)}, 'penaltyKillSVP':{'N':str(totalPKSVP/32)}})
