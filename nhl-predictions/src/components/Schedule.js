@@ -72,8 +72,8 @@ const Schedule = () => {
             <h2>Expected</h2>
             <div class="scoreDetailsRow">
                 <h2>{score.teams.home.xG}</h2> 
-                <h4>{score.teams.home.winPercentage > 5 && <div>{score.teams.home.team.name} {score.teams.home.winPercentage * 10}%</div>}</h4>
-                <h4>{score.teams.home.winPercentage <= 5 && <div>{score.teams.away.team.name} {score.teams.away.winPercentage * 10}%</div>}</h4>
+                <h4>{score.teams.home.winPercentage > 5 && <div>{score.teams.home.team.name} {Math.round(score.teams.home.winPercentage * 100)/10}%</div>}</h4>
+                <h4>{score.teams.home.winPercentage <= 5 && <div>{score.teams.away.team.name} {Math.round(score.teams.away.winPercentage * 100)/10}%</div>}</h4>
                 <h2>{score.teams.away.xG}</h2> 
             </div>
             <h2>Result</h2>
